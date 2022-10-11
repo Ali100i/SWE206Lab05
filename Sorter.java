@@ -13,11 +13,14 @@ static void selectionSort(int arr[]) {
 			}
 		}
 	}
-	
-	
-	public int[] sort(int[] array){
+public int[] sort(int[] array){
 
-return insertionSort(array);
+	return selectionSort(array);
+} 
+	
+public int[] sort(int[] array){
+
+	return insertionSort(array);
 
 } 
   private int[] insertionSort(int[] input){
