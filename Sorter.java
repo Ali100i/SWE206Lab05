@@ -13,6 +13,13 @@ static void selectionSort(int arr[]) {
 			}
 		}
 	}
+	
+	
+	public int[] sort(int[] array){
+
+return insertionSort(array);
+
+} 
   private int[] insertionSort(int[] input){
 		
 	    int temp;
