@@ -1,5 +1,17 @@
 public class Sorter{
 
-
+static void selectionSort(int arr[]) {
+		for (int i = 0; i < arr.length - 1; i++) {
+			int iMin = i;
+			for (int j = i + 1; j < arr.length; j++)
+				if (arr[j] < arr[iMin])
+					iMin = j;
+			if (i != iMin) {
+				int temp = arr[i];
+				arr[i] = arr[iMin];
+				arr[iMin] = temp;
+			}
+		}
+	}
   
 }
